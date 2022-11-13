@@ -6,7 +6,7 @@ from makenoise import add_Gaussian_noise
 from makenoise import add_pepper_salt_noise
 
 def OTSU(img : np.ndarray) -> np.ndarray:
-        h = np.zeros(256, dtype=np.int16)
+        h = np.zeros(256, dtype=np.uint)
         m, n = img.shape
         for i in range(m):
             for j in range(n):
